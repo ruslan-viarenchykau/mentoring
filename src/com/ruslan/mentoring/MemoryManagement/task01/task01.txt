@@ -1,0 +1,12 @@
+Apply changes to the following app code to make GC curve have more freqent peaks.
+
+public class Main {
+
+    public static void main(String[] args) {
+        List<Object> list = new ArrayList<Object>();
+        while(true) {
+             list.add(new Object());
+        }
+    }
+
+}
