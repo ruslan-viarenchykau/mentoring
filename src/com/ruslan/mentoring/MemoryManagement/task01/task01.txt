@@ -1,4 +1,4 @@
-Apply changes to the following app code to make GC curve have more freqent peaks.
+Apply changes to the following app code to make GC curve have more frequent peaks.
 
 public class Main {
 
