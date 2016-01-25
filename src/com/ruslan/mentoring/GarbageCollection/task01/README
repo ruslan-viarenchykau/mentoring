@@ -1,0 +1,5 @@
+1) -Xms6m -Xmx18m -XX:NewSize=2m -XX:MaxNewSize=2m -XX:PermSize=20m -XX:MaxPermSize=30m -XX:+UseSerialGC
+2) -Xms3m -Xmx12m -XX:NewSize=1m -XX:MaxNewSize=1m -XX:PermSize=20m -XX:MaxPermSize=20m -XX:+UseParallelGC
+3) -Xms9m -Xmx18m -XX:NewSize=3m -XX:MaxNewSize=3m -XX:PermSize=40m -XX:MaxPermSize=40m -XX:+UseParallelOldGC
+4) -Xms6m -Xmx18m -XX:NewSize=2m -XX:MaxNewSize=2m -XX:PermSize=20m -XX:MaxPermSize=30m -XX:+UseConcMarkSweepGC -XX:ParallelGCThreads=2
+5) -Xms4m -Xmx16m -XX:NewSize=2m -XX:MaxNewSize=2m -XX:PermSize=12m -XX:MaxPermSize=18m -XX:+UseG1GC
