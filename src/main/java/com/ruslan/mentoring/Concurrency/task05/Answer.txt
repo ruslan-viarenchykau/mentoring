@@ -1,0 +1,6 @@
+1. Run app. Observe how 'below zero' appears. Review the code and try to explain why it happens
+
+It happens because there is no logic to prevent counter from decrement if it's value is 0.
+So if decrementing logic will be invoked more often than incrementing it is possible to get -1 value.
+Also provided implementation is bad because increment/decrement is non-atomic operations and sometimes if these
+operations will be executed in parallel the threads will interfere and the value might be wrong

@@ -1,0 +1,15 @@
+There must be 3 component in the system:
+
+1) Consumer
+2) Producer
+3) Shared Resource
+
+Shared resource has some counter.
+
+Shared resource rules usage:
+
+1) Initial value 10
+2) Consumer can decrease this value:  5 < resource
+3) Producer can increase this value:  resource < 10
+
+All operation must be logged.
