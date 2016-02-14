@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>mentoring - Checkstyle report</title>
+    <link>https://github.com/ruslan-viarenchykau/mentoring</link>
+    <description>mentoring - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2016</copyright>
+    <item>
+      <title>File: 32,
+             Errors: 504,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task02.Main.java">com/ruslan/mentoring/Concurrency/task02/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task02.QuickSorter.java">com/ruslan/mentoring/Concurrency/task02/QuickSorter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  54
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Coaching.Main.java">com/ruslan/mentoring/Coaching/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task03.Consumer.java">com/ruslan/mentoring/Concurrency/task03/Consumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.gmail.isheremetov.jmp.coaching.Main.java">com/gmail/isheremetov/jmp/coaching/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.gmail.isheremetov.jmp.coaching.GetStringsThread.java">com/gmail/isheremetov/jmp/coaching/GetStringsThread.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task03.Resource.java">com/ruslan/mentoring/Concurrency/task03/Resource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task04.Consumer.java">com/ruslan/mentoring/Concurrency/task04/Consumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.gmail.isheremetov.jmp.coaching.Entry.java">com/gmail/isheremetov/jmp/coaching/Entry.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task04.Bus.java">com/ruslan/mentoring/Concurrency/task04/Bus.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task01.Main.java">com/ruslan/mentoring/Concurrency/task01/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  32
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task01.Car.java">com/ruslan/mentoring/Concurrency/task01/Car.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Coaching.Entry.java">com/ruslan/mentoring/Coaching/Entry.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task04.Producer.java">com/ruslan/mentoring/Concurrency/task04/Producer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.gmail.isheremetov.jmp.coaching.ReportGenerator.java">com/gmail/isheremetov/jmp/coaching/ReportGenerator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task03.Producer.java">com/ruslan/mentoring/Concurrency/task03/Producer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.GarbageCollection.task01.Main.java">com/ruslan/mentoring/GarbageCollection/task01/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.MemoryManagement.task03.Main.java">com/ruslan/mentoring/MemoryManagement/task03/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task04.Main.java">com/ruslan/mentoring/Concurrency/task04/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.MemoryManagement.task02.Main.java">com/ruslan/mentoring/MemoryManagement/task02/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  34
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.gmail.isheremetov.jmp.coaching.GetLengthThread.java">com/gmail/isheremetov/jmp/coaching/GetLengthThread.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task06.SqrtOfSumOfSquaresCalculator.java">com/ruslan/mentoring/Concurrency/task06/SqrtOfSumOfSquaresCalculator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.gmail.isheremetov.jmp.coaching.utils.RestUtils.java">com/gmail/isheremetov/jmp/coaching/utils/RestUtils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  29
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task03.Main.java">com/ruslan/mentoring/Concurrency/task03/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task06.Main.java">com/ruslan/mentoring/Concurrency/task06/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.MemoryManagement.task01.Main.java">com/ruslan/mentoring/MemoryManagement/task01/Main.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Coaching.GetStringsThread.java">com/ruslan/mentoring/Coaching/GetStringsThread.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task02.QuickSortTask.java">com/ruslan/mentoring/Concurrency/task02/QuickSortTask.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task05.Opposition.java">com/ruslan/mentoring/Concurrency/task05/Opposition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  29
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task06.Generator.java">com/ruslan/mentoring/Concurrency/task06/Generator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.MemoryManagement.task03.SimpleStack.java">com/ruslan/mentoring/MemoryManagement/task03/SimpleStack.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/ruslan-viarenchykau/mentoring/checkstyle.html#com.ruslan.mentoring.Concurrency.task06.SumCalculator.java">com/ruslan/mentoring/Concurrency/task06/SumCalculator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
