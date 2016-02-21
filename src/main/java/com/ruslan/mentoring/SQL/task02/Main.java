@@ -14,7 +14,6 @@ import java.util.concurrent.ArrayBlockingQueue;
  * 2 - columnsNumber. The number of columns to add to the created table with random types
  * 3 - rowsNumber. The number of rows to add to each table
  * 4 - threadsNumber. The number of threads for data generation
- * 5 - driverClassName (optional). The name of driver class to use. Default = "org.postgresql.Driver"
  *
  * Example command line args:
  * "jdbc:postgresql://localhost:5432/mydatabase?user=user&password=password" "10" "30" "500" "20"
