@@ -1,5 +1,6 @@
-package com.ruslan.mentoring.SQL.task02;
+package com.ruslan.mentoring.SQL.util;
 
+import com.ruslan.mentoring.SQL.util.type.Column;
 import org.apache.commons.dbcp2.*;
 import org.apache.commons.pool2.ObjectPool;
 import org.apache.commons.pool2.impl.GenericObjectPool;
@@ -7,6 +8,7 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
@@ -14,7 +16,7 @@ import java.util.Properties;
 import java.util.concurrent.BlockingQueue;
 
 public class SqlUtil {
-    public static void executeSql(String sql, DataSource dataSource) {
+    public static void executeUpdate(String sql, DataSource dataSource) {
         try (
                 Connection connection = dataSource.getConnection();
                 Statement statement = connection.createStatement();
@@ -25,8 +27,23 @@ public class SqlUtil {
         }
     }
 
+    public static int[] executeBatch(DataSource dataSource, String... sql) {
+        try (
+                Connection connection = dataSource.getConnection();
+                Statement statement = connection.createStatement();
+        ) {
+            for (String query: sql) {
+                statement.addBatch(query);
+            }
+            return statement.executeBatch();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public static void dropAllTables(DataSource dataSource) {
-        SqlUtil.executeSql("DROP SCHEMA public CASCADE; CREATE SCHEMA public;", dataSource);
+        SqlUtil.executeUpdate("DROP SCHEMA public CASCADE; CREATE SCHEMA public;", dataSource);
     }
 
     public static String generateCreateTableSql(String tableName, List<Column> columns) {
@@ -41,6 +58,15 @@ public class SqlUtil {
         createTableSql.append(");");
 
         return createTableSql.toString();
+    }
+
+    public static String generateInsertSql(String tableName, List<String> values) {
+        StringBuilder insertSql = new StringBuilder("INSERT INTO ").append(tableName).append(" VALUES (");
+        for (String value: values) {
+            insertSql.append("'").append(value).append("'").append(",");
+        }
+        insertSql.deleteCharAt(insertSql.length() - 1);
+        return insertSql.append(");").toString();
     }
 
     public static void generateInsertSqlToQueue(String tableName, List<Column> columns, int rowsNumber,

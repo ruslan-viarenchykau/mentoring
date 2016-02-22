@@ -1,5 +1,7 @@
 package com.ruslan.mentoring.SQL.task02;
 
+import com.ruslan.mentoring.SQL.util.SqlUtil;
+
 import java.util.concurrent.TimeUnit;
 
 public class DataGenerator implements Runnable {
@@ -15,7 +17,7 @@ public class DataGenerator implements Runnable {
             try {
                 String sqlQuery = options.getSqlQueries().poll(1, TimeUnit.SECONDS);
                 if (sqlQuery != null) {
-                    SqlUtil.executeSql(sqlQuery, options.getDataSource());
+                    SqlUtil.executeUpdate(sqlQuery, options.getDataSource());
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();

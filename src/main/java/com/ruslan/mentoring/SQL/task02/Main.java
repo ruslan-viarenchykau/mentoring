@@ -1,5 +1,8 @@
 package com.ruslan.mentoring.SQL.task02;
 
+import com.ruslan.mentoring.SQL.util.SqlUtil;
+import com.ruslan.mentoring.SQL.util.type.Column;
+
 import javax.sql.DataSource;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -34,7 +37,7 @@ public class Main {
         SqlUtil.dropAllTables(dataSource);
 
         long startTime = new Date().getTime();
-        fillDatabase(new GeneratorOptions(dataSource, new ArrayBlockingQueue<String>(500)));
+        fillDatabase();
         long endTime = new Date().getTime();
 
         System.out.println("Total time: " + (endTime - startTime));
@@ -50,9 +53,9 @@ public class Main {
         dataSource = SqlUtil.setupDataSource(connectionUrl);
     }
 
-    private static void fillDatabase(GeneratorOptions options)
-            throws InterruptedException {
+    private static void fillDatabase() throws InterruptedException {
 
+        GeneratorOptions options = new GeneratorOptions(dataSource, new ArrayBlockingQueue<String>(500));
         List<Thread> threads = startThreads(options);
 
         for (int i = 0; i < tablesNumber; i++) {
@@ -60,7 +63,7 @@ public class Main {
             String tableName = "table_" + i + "_" + RANDOM.nextInt(Integer.MAX_VALUE);
 
             String createTableSql = SqlUtil.generateCreateTableSql(tableName, columns);
-            SqlUtil.executeSql(createTableSql, dataSource);
+            SqlUtil.executeUpdate(createTableSql, dataSource);
             SqlUtil.generateInsertSqlToQueue(tableName, columns, rowsNumber, options.getSqlQueries());
         }
 

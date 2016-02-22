@@ -1,4 +1,4 @@
-package com.ruslan.mentoring.SQL.task02;
+package com.ruslan.mentoring.SQL.util.type;
 
 import java.util.Random;
 

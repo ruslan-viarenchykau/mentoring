@@ -1,4 +1,4 @@
-package com.ruslan.mentoring.SQL.task02;
+package com.ruslan.mentoring.SQL.util.type;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -9,7 +9,7 @@ public class ColumnType {
     private Type type;
     private int size;
 
-    private ColumnType(Type type) {
+    public ColumnType(Type type) {
         this.type = type;
         this.size = 0;
     }
