@@ -1,0 +1,3 @@
+dependencies {
+    compile project(':DAO'),'javax.servlet:javax.servlet-api:3.1.0','joda-time:joda-time:2.9.2'
+}
