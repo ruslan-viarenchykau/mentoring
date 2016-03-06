@@ -1,0 +1,3 @@
+Implement Hangman game using Junit following TDD. (It can be console application w/o UI)
+
+Discuss with mentor what was hard in TDD.
