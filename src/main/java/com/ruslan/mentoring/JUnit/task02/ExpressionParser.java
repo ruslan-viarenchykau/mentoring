@@ -116,7 +116,7 @@ public class ExpressionParser {
     /**
      * This method simply carry calculation of a specific operation
      */
-    private Double operateSingle(Double op2, Double op1, Operation operation) {
+    protected Double operateSingle(Double op2, Double op1, Operation operation) {
         switch(operation) {
             case ADD:
                 return op1+op2;
