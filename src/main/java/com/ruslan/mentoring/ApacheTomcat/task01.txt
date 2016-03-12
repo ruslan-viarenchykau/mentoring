@@ -1,0 +1,3 @@
+Configure the Tomcat and Apache integration with mod_jk.so module.
+Build multi-module web application and deploy with tomcat manager application (text/script mode).
+Static (html, css, js) publish to apache, dynamic to tomcat.  Test and write readme, how mentor can deploy it and check that it is working.
