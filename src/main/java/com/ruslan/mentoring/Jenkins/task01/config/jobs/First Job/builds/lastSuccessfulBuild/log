@@ -1,0 +1,14 @@
+Started by user [8mha:AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/dLi1CL9xJTczLzM4pKixJL8IgA1KT2tyAAAAA==[0mAdministrator
+Building in workspace C:\Users\Ðóñëàí\.jenkins\workspace\First Job
+No emails were triggered.
+[First Job] $ cmd /c call C:\Users\27C6~1\AppData\Local\Temp\hudson2470858154216017302.bat
+
+C:\Users\ãá« ­\.jenkins\workspace\First Job>echo 20 
+20
+
+C:\Users\ãá« ­\.jenkins\workspace\First Job>exit 0 
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending email to: jen-tst@mail.ru ruslan.veren@gmail.com
+Error sending to the following VALID addresses: jen-tst@mail.ru ruslan.veren@gmail.com
+Finished: SUCCESS

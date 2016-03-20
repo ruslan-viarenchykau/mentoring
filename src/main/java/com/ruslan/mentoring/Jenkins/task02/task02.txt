@@ -1,0 +1,8 @@
+1. Create GitHub account
+2. Fork Spring Petclinic application (https://github.com/spring-projects/spring-petclinic/)
+3. Configure Jenkins build job to checkout Petclinic project from your GitHub account
+4. Configure polling interval (5 minutes)
+5. Setup Petclinic build with Maven
+6. Ensure unit tests are executed
+7. Ensure unit test results are display on Jenkins project and build pages
+8. Commit any change to your GitHub project and this should result in Jenkins automated build triggered
