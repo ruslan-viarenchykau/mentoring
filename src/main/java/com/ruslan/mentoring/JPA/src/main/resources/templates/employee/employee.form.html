@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <form action="#" th:action="@{/employees}" th:object="${employee}" method="post">
+            <table style="border:2px solid #777777;width:300px;">
+                <tbody style="color:#FFAAAA;">
+                    <tr>
+                        <th colspan="2" th:text="${message}"></th>
+                    </tr>
+                    <tr>
+                        <td>First name</td>
+                        <td><input type="text" th:field="*{firstName}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td><input type="text" th:field="*{lastName}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>
+                            <select>
+                                <option th:each="status : ${T(com.ruslan.mentoring.jpa.models.EmployeeStatus).values()}"
+                                        th:value="${status}"
+                                        th:text="${status}">
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody style="color:#AAFFAA;">
+                    <tr>
+                        <th colspan="2">Address</th>
+                    </tr>
+                    <tr>
+                        <td>Territory</td>
+                        <td><input type="text" th:field="*{address.territory}"/></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type="text" th:field="*{address.city}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Street</td>
+                        <td><input type="text" th:field="*{address.street}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Building</td>
+                        <td><input type="text" th:field="*{address.building}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Room</td>
+                        <td><input type="text" th:field="*{address.room}"/></td>
+                    </tr>
+                </tbody>
+                <tbody style="color:#AAAAFF;">
+                    <tr>
+                        <th colspan="2">Personal</th>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td><input type="text" th:field="*{personal.phoneNumber}"/></td>
+                    </tr>
+                    <tr>
+                        <td>Driver license</td>
+                        <td><input type="text" th:field="*{personal.driverLicense}"/></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="2"><input type="submit" value="Create"/></th>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
