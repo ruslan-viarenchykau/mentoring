@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 @Controller
-@RequestMapping("/employees")
+@RequestMapping("/employee")
 public class EmployeeService extends AbstractService {
     private static final String ENTITY_KEY = "employee";
 
@@ -24,7 +24,7 @@ public class EmployeeService extends AbstractService {
     }
 
     @Transactional
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST, path = "create")
     public String create(Model model, @ModelAttribute Employee employee) {
         entityManager.persist(employee);
         model.addAttribute(ENTITY_KEY, employee);
@@ -41,8 +41,8 @@ public class EmployeeService extends AbstractService {
         return "employee/result";
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "{id}")
-    public String find(Model model, @PathVariable Long id) {
+    @RequestMapping(method = RequestMethod.GET, path = "read")
+    public String find(Model model, @RequestParam Long id) {
         Employee employee = entityManager.find(Employee.class, id);
         if (employee == null) {
             Employee stub = new Employee();
