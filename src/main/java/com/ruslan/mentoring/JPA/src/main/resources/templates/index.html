@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <style>
+            input { width: 50px; }
+            button { width: 25px; }
+            table { border:2px solid #777777; width:500px; cell-padding:0; cell-spacing:0; }
+        </style>
+    </head>
+    <body>
+        <h1 th:text="${message} ? ${message} : 'Main page'"></h1>
+        <table>
+            <tr>
+                <th></th> <th>Create</th> <th>Read</th> <th>Update</th> <th>Delete</th>
+            </tr>
+            <tr>
+                <th>Employee</th>
+                <td><form action="/employee/create" method="get"><button type="submit">C</button></form> </td>
+                <td><form action="/employee/read" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">R</button></form></td>
+                <td><form action="/employee/update" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">U</button></form></td>
+                <td><form action="/employee/delete" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
+            </tr>
+            <tr>
+                <th>Unit</th>
+                <td><form action="/unit/create" method="get"><button type="submit">C</button></form> </td>
+                <td><form action="/unit/read" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">R</button></form></td>
+                <td><form action="/unit/update" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">U</button></form></td>
+                <td><form action="/unit/delete" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
+            </tr>
+            <tr>
+                <th>Project</th>
+                <td><form action="/project/create" method="get"><button type="submit">C</button></form> </td>
+                <td><form action="/project/read" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">R</button></form></td>
+                <td><form action="/project/update" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">U</button></form></td>
+                <td><form action="/project/delete" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
+            </tr>
+        </table>
+    </body>
+</html>

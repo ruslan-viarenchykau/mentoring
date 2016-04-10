@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>View project</title>
+    </head>
+    <body>
+        <table style="border:2px solid #777777;width:300px;">
+            <tr>
+                <th colspan="2">Project #<span th:text="${project.id}"></span></th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td th:text="${project.name}"></td>
+            </tr>
+            <tr>
+                <td>Title</td>
+                <td th:text="${project.title}"></td>
+            </tr>
+            <tr>
+                <td>Customer</td>
+                <td th:text="${project.customer}"></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td th:text="${project.description}"></td>
+            </tr>
+        </table>
+        <div><a href="/">Go to main</a></div>
+    </body>
+</html>

@@ -20,7 +20,7 @@ public class UsersCollectionTest {
     @Before
     public void setUp() throws Exception {
         client = ClientBuilder.newClient();
-        target = client.target("http://localhost:8080").path("/web-services/users");
+        target = client.target("http://localhost:8080").path("/web-controllers/users");
     }
 
     @After
@@ -62,7 +62,7 @@ public class UsersCollectionTest {
 
     @Test
     public void putUserTest() throws Exception {
-        WebTarget target = client.target("http://localhost:8080").path("/web-services/users/1");
+        WebTarget target = client.target("http://localhost:8080").path("/web-controllers/users/1");
         Form form = new Form();
 
         form.param("id", "1");
@@ -86,7 +86,7 @@ public class UsersCollectionTest {
     public void deleteUserTest() throws Exception {
         addUser();
 
-        WebTarget target = client.target("http://localhost:8080").path("/web-services/users/1");
+        WebTarget target = client.target("http://localhost:8080").path("/web-controllers/users/1");
         target.request().delete();
 
         User user = getUser("1");
@@ -116,7 +116,7 @@ public class UsersCollectionTest {
     }
 
     private User getUser(String id) {
-        WebTarget target = client.target("http://localhost:8080").path("/web-services/users/" + id);
+        WebTarget target = client.target("http://localhost:8080").path("/web-controllers/users/" + id);
         return target.request(MediaType.APPLICATION_JSON_TYPE).get(User.class);
     }
 }

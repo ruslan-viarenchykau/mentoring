@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Create employee</title>
     </head>
     <body>
         <form action="#" th:action="@{/employee/create}" th:object="${employee}" method="post">
             <table style="border:2px solid #777777;width:300px;">
                 <tbody style="color:#FFAAAA;">
                     <tr>
-                        <th colspan="2" th:text="${message}"></th>
+                        <th colspan="2">Create employee</th>
                     </tr>
                     <tr>
                         <td>First name</td>
@@ -75,5 +76,6 @@
                 </tbody>
             </table>
         </form>
+        <div><a href="/">Go to main</a></div>
     </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Create unit</title>
+    </head>
+    <body>
+        <form action="#" th:action="@{/unit/create}" th:object="${unit}" method="post">
+            <table style="border:2px solid #777777;width:300px;">
+                <tr>
+                    <th colspan="2">Create unit</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" th:field="*{name}"/></td>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td><input type="text" th:field="*{title}"/></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><input type="text" th:field="*{description}"/></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="submit" value="Create"/></th>
+                </tr>
+            </table>
+        </form>
+        <div><a href="/">Go to main</a></div>
+    </body>
+</html>
