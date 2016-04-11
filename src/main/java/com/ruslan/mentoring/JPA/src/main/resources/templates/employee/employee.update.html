@@ -23,7 +23,7 @@
                     <tr>
                         <td>Status</td>
                         <td>
-                            <select>
+                            <select name="status">
                                 <option th:each="status : ${T(com.ruslan.mentoring.jpa.models.EmployeeStatus).values()}"
                                         th:value="${status}"
                                         th:text="${status}">

@@ -73,7 +73,7 @@ public class UnitController extends AbstractController {
     /*   D E L E T E   */
 
     @Transactional
-    @RequestMapping(method = RequestMethod.GET, path = "delete")
+    @RequestMapping(method = RequestMethod.POST, path = "delete")
     public String delete(Model model, @RequestParam Long id) {
         Unit unit = entityManager.find(Unit.class, id);
         if (unit != null) {

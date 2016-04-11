@@ -10,9 +10,6 @@ public class Address {
     private String building;
     private String room;
 
-    public Address() {
-    }
-
     public String getTerritory() {
         return territory;
     }

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Assign employee for project</title>
+    </head>
+    <body>
+    <form action="#" th:action="@{/employee/assignForProject}" method="post">
+        <table style="border:2px solid #777777;width:300px;">
+            <tr>
+                <th colspan="2">Assign employee for project</th>
+            </tr>
+            <tr>
+                <td>Employee id</td>
+                <td>
+                    <select name="employeeId">
+                        <option th:each="employeeId : ${employeesIds}"
+                                th:value="${employeeId}"
+                                th:text="${employeeId}">
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Project id</td>
+                <td>
+                    <select name="projectId">
+                        <option th:each="projectId : ${projectsIds}"
+                                th:value="${projectId}"
+                                th:text="${projectId}">
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" value="Assign"/></th>
+            </tr>
+        </table>
+    </form>
+    <div><a href="/">Go to main</a></div>
+    </body>
+</html>

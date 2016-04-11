@@ -17,14 +17,8 @@ public class Project {
 
     private String description;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "project_employee",
-            joinColumns=@JoinColumn(name = "project_id"),
-            inverseJoinColumns=@JoinColumn(name = "employee_id"))
+    @ManyToMany(mappedBy = "projects")
     private List<Employee> employees;
-
-    public Project() {
-    }
 
     public Long getId() {
         return id;

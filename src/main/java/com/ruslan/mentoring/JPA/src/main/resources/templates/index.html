@@ -6,6 +6,8 @@
             input { width: 50px; }
             button { width: 25px; }
             table { border:2px solid #777777; width:500px; cell-padding:0; cell-spacing:0; }
+            .with-margin { margin: 10px 10px 0 0; display: inline-block; }
+            .wide { width: initial; }
         </style>
     </head>
     <body>
@@ -19,22 +21,24 @@
                 <td><form action="/employee/create" method="get"><button type="submit">C</button></form> </td>
                 <td><form action="/employee/read" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">R</button></form></td>
                 <td><form action="/employee/update" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">U</button></form></td>
-                <td><form action="/employee/delete" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
+                <td><form action="/employee/delete" method="post"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
             </tr>
             <tr>
                 <th>Unit</th>
                 <td><form action="/unit/create" method="get"><button type="submit">C</button></form> </td>
                 <td><form action="/unit/read" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">R</button></form></td>
                 <td><form action="/unit/update" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">U</button></form></td>
-                <td><form action="/unit/delete" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
+                <td><form action="/unit/delete" method="post"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
             </tr>
             <tr>
                 <th>Project</th>
                 <td><form action="/project/create" method="get"><button type="submit">C</button></form> </td>
                 <td><form action="/project/read" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">R</button></form></td>
                 <td><form action="/project/update" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/><button type="submit">U</button></form></td>
-                <td><form action="/project/delete" method="get"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
+                <td><form action="/project/delete" method="post"><input type="number" min="1" value="1" name="id" autocomplete="off"/> <button type="submit">D</button></form></td>
             </tr>
         </table>
+        <form class="with-margin" action="/employee/addToUnit" method="get"><button type="submit" class="wide">Add employee to unit</button></form>
+        <form class="with-margin" action="/employee/assignForProject" method="get"><button type="submit" class="wide">Assign employee to project</button></form>
     </body>
 </html>

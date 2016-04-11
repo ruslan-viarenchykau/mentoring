@@ -23,24 +23,11 @@ public class Employee {
     @OneToOne(cascade = CascadeType.ALL)
     private Personal personal;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "employee_project",
-            joinColumns = @JoinColumn(name = "employee_id"),
-            inverseJoinColumns = @JoinColumn(name = "project_id"))
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Project> projects;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinTable(name="employee_unit",
-            joinColumns = @JoinColumn(name = "employee_id"),
-            inverseJoinColumns = @JoinColumn(name = "unit_id"))
+    @ManyToOne
     private Unit unit;
-
-    public Employee() {
-        address = new Address();
-        personal = new Personal();
-        projects = new ArrayList<>();
-        unit = new Unit();
-    }
 
     public Long getId() {
         return id;

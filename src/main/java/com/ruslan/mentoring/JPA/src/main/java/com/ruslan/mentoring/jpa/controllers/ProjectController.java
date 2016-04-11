@@ -73,7 +73,7 @@ public class ProjectController extends AbstractController {
     /*   D E L E T E   */
 
     @Transactional
-    @RequestMapping(method = RequestMethod.GET, path = "delete")
+    @RequestMapping(method = RequestMethod.POST, path = "delete")
     public String delete(Model model, @RequestParam Long id) {
         Project project = entityManager.find(Project.class, id);
         if (project != null) {

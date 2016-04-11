@@ -12,14 +12,8 @@ public class Unit {
     private String title;
     private String description;
 
-    @OneToMany
-    @JoinTable(name = "unit_employee",
-            joinColumns = @JoinColumn(name = "unit_id"),
-            inverseJoinColumns = @JoinColumn(name = "employee_id"))
+    @OneToMany(mappedBy = "unit")
     private List<Employee> employees;
-
-    public Unit() {
-    }
 
     public Long getId() {
         return id;

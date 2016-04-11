@@ -22,6 +22,14 @@
                     <td>Status</td>
                     <td th:text="${employee.status}"></td>
                 </tr>
+                <tr>
+                    <td>Projects</td>
+                    <td><span th:each="project : ${employee.projects}" th:text="${project.id}+';'"></span></td>
+                </tr>
+                <tr>
+                    <td>Unit</td>
+                    <td th:text="${employee.unit} ? ${employee.unit.id} : ''"></td>
+                </tr>
             </tbody>
             <tbody style="color:#AAFFAA;">
                 <tr>

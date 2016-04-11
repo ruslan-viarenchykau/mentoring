@@ -13,9 +13,6 @@ public class Personal {
     private String phoneNumber;
     private String driverLicense;
 
-    public Personal() {
-    }
-
     public Long getId() {
         return id;
     }
