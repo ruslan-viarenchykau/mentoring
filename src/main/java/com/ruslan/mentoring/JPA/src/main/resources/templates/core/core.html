@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>View employee</title>
+    </head>
+    <body>
+        <h2>Employee</h2>
+        <div>Name: <span th:text="${employee.firstName}"></span></div>
+        <div>Name: <span th:text="${employee.lastName}"></span></div>
+
+        <h2>Project</h2>
+        <div>Name: <span th:text="${project.name}"></span></div>
+
+        <h2>Default unit</h2>
+        <div>Name: <span th:text="${defaultUnit.name}"></span></div>
+        <div>Title: <span th:text="${defaultUnit.title}"></span></div>
+        <div>Description: <span th:text="${defaultUnit.description}"></span></div>
+
+        <h2>Custom unit</h2>
+        <div>Name: <span th:text="${customUnit.name}"></span></div>
+        <div>Title: <span th:text="${customUnit.title}"></span></div>
+        <div>Description: <span th:text="${customUnit.description}"></span></div>
+
+        <h2>Custom unit BF</h2>
+        <div>Name: <span th:text="${customUnitBF.name}"></span></div>
+        <div>Title: <span th:text="${customUnitBF.title}"></span></div>
+        <div>Description: <span th:text="${customUnitBF.description}"></span></div>
+    </body>
+</html>
