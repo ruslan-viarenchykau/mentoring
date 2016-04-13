@@ -1,6 +1,6 @@
-package com.ruslan.mentoring.jpa.controllers.core;
+package com.ruslan.mentoring.jpa.spring_core_task;
 
-import com.ruslan.mentoring.jpa.services.CreateUnitService;
+import com.ruslan.mentoring.jpa.spring_core_task.services.CreateUnitService;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.stereotype.Component;
 

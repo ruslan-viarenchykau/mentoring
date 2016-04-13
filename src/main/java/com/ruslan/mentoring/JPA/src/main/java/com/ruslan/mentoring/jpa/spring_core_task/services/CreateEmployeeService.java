@@ -1,4 +1,4 @@
-package com.ruslan.mentoring.jpa.services;
+package com.ruslan.mentoring.jpa.spring_core_task.services;
 
 import com.ruslan.mentoring.jpa.models.Employee;
 import org.springframework.stereotype.Service;

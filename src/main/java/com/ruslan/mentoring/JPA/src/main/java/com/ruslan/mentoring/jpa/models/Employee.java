@@ -5,11 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Employee {
+public class Employee implements PersistentObject {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String firstName;
 
     private String lastName;
@@ -29,10 +28,12 @@ public class Employee {
     @ManyToOne
     private Unit unit;
 
+    @Override
     public Long getId() {
         return id;
     }
 
+    @Override
     public void setId(Long id) {
         this.id = id;
     }

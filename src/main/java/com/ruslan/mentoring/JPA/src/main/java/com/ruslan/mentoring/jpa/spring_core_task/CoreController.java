@@ -1,11 +1,11 @@
-package com.ruslan.mentoring.jpa.controllers.core;
+package com.ruslan.mentoring.jpa.spring_core_task;
 
 import com.ruslan.mentoring.jpa.models.Employee;
 import com.ruslan.mentoring.jpa.models.Project;
 import com.ruslan.mentoring.jpa.models.Unit;
-import com.ruslan.mentoring.jpa.services.CreateEmployeeService;
-import com.ruslan.mentoring.jpa.services.CreateProjectService;
-import com.ruslan.mentoring.jpa.services.CreateUnitService;
+import com.ruslan.mentoring.jpa.spring_core_task.services.CreateEmployeeService;
+import com.ruslan.mentoring.jpa.spring_core_task.services.CreateProjectService;
+import com.ruslan.mentoring.jpa.spring_core_task.services.CreateUnitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

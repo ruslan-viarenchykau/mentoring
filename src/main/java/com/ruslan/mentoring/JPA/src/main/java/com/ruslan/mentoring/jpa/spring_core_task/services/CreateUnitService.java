@@ -1,7 +1,6 @@
-package com.ruslan.mentoring.jpa.services;
+package com.ruslan.mentoring.jpa.spring_core_task.services;
 
 import com.ruslan.mentoring.jpa.models.Unit;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service

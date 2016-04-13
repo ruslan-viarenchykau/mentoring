@@ -1,8 +1,9 @@
 package com.ruslan.mentoring.jpa.controllers;
 
+import com.ruslan.mentoring.jpa.services.EntityManagerService;
 import com.ruslan.mentoring.jpa.models.Unit;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +15,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class UnitController extends AbstractController {
     private static final String ENTITY_KEY = "unit";
 
+    @Autowired
+    private EntityManagerService service;
+
     /*   F I N D   */
 
     @RequestMapping(method = RequestMethod.GET, path = "read")
     public String find(Model model, @RequestParam Long id) {
-        Unit unit = entityManager.find(Unit.class, id);
+        Unit unit = service.find(Unit.class, id);
         if (unit == null) {
             model.addAttribute(MESSAGE_KEY, "Unit not found");
             return "index";
@@ -35,10 +39,9 @@ public class UnitController extends AbstractController {
         return "unit/unit.create";
     }
 
-    @Transactional
     @RequestMapping(method = RequestMethod.POST, path = "create")
     public String create(Model model, @ModelAttribute Unit unit) {
-        entityManager.persist(unit);
+        service.create(unit);
         model.addAttribute(MESSAGE_KEY, "Unit created");
         return "index";
     }
@@ -46,8 +49,8 @@ public class UnitController extends AbstractController {
     /*   U P D A T E   */
 
     @RequestMapping(method = RequestMethod.GET, path = "update")
-    public String getUpdateForm(Model model, Unit unit, @RequestParam Long id) {
-        unit = entityManager.find(Unit.class, id);
+    public String getUpdateForm(Model model, @RequestParam Long id) {
+        Unit unit = service.find(Unit.class, id);
         if (unit == null) {
             model.addAttribute(MESSAGE_KEY, "Unit not found");
             return "index";
@@ -57,31 +60,19 @@ public class UnitController extends AbstractController {
         }
     }
 
-    @Transactional
     @RequestMapping(method = RequestMethod.POST, path = "update")
     public String update(Model model, @ModelAttribute Unit unit) {
-        Unit unitById = entityManager.find(Unit.class, unit.getId());
-        if (unitById != null) {
-            entityManager.merge(unit);
-            model.addAttribute(MESSAGE_KEY, "Unit updated");
-        } else {
-            model.addAttribute(MESSAGE_KEY, "Unit not found");
-        }
+        boolean updated = service.update(unit);
+        model.addAttribute(MESSAGE_KEY, updated ? "Unit updated" : "Unit not found");
         return "index";
     }
 
     /*   D E L E T E   */
 
-    @Transactional
     @RequestMapping(method = RequestMethod.POST, path = "delete")
     public String delete(Model model, @RequestParam Long id) {
-        Unit unit = entityManager.find(Unit.class, id);
-        if (unit != null) {
-            entityManager.remove(unit);
-            model.addAttribute(MESSAGE_KEY, "Unit deleted");
-        } else {
-            model.addAttribute(MESSAGE_KEY, "Unit not found");
-        }
+        boolean deleted = service.delete(Unit.class, id);
+        model.addAttribute(MESSAGE_KEY, deleted ? "Unit deleted" : "Unit not found");
         return "index";
     }
 }

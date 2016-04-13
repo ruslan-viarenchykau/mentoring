@@ -1,7 +1,6 @@
-package com.ruslan.mentoring.jpa.controllers.core;
+package com.ruslan.mentoring.jpa.spring_core_task;
 
-import com.ruslan.mentoring.jpa.services.CreateUnitService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ruslan.mentoring.jpa.spring_core_task.services.CreateUnitService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
